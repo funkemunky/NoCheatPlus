@@ -912,13 +912,14 @@ public class FightListener extends CheckListener implements JoinLeaveListener{
 
     @Override
     public void playerJoins(final Player player) {
+	final FightData data = DataManager.getGenericInstance(player, FightData.class);
+	data.loginExempt = System.currentTimeMillis();
     }
 
     @Override
     public void playerLeaves(final Player player) {
         final FightData data = DataManager.getGenericInstance(player, FightData.class);
         data.angleHits.clear();
-	data.loginExempt = true;
     }
 
     @EventHandler(ignoreCancelled = false, priority = EventPriority.MONITOR)
