@@ -47,13 +47,12 @@ public class PitchPattern extends Check {
             float gcdDiff = Math.abs(deltaPitchGCD - lastDeltaPitchGCD);
 
             // Pitch GCD is a lot different from last time or the GCD is just too small
-            if((gcdDiff > cc.pitchPatternDiff || deltaPitchGCD < cc.pitchPatternGCD) & !data.loginExempt) {
+            if((gcdDiff > cc.pitchPatternDiff || deltaPitchGCD < cc.pitchPatternGCD) & data.loginExempt + 5000 < ) {
                 executeActions(player, data.pitchPatternVL, 1D, pData.getGenericInstance(FightConfig.class).pitchPatternActions).willCancel();
                 data.pitchPatternVL += 1;
             }
             else {
             data.pitchPatternVL *= 0.98;
-            data.loginExempt = false;
             }
 
             lastDeltaPitches.clear();
