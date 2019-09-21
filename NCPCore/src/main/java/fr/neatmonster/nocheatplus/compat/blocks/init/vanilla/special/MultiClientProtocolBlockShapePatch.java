@@ -65,13 +65,6 @@ public class MultiClientProtocolBlockShapePatch extends AbstractBlockPropertiesP
                 | BlockProperties.F_HEIGHT100 
                 | BlockProperties.F_GROUND_HEIGHT);
         done.add("soil");
-
-        try {
-            BlockFlags.addFlags(Material.GRASS_PATH, 
-                    BlockProperties.F_MIN_HEIGHT16_15 
-                    | BlockProperties.F_HEIGHT100 
-                    | BlockProperties.F_GROUND_HEIGHT);
-            done.add("grass_path");
         }
         catch (Throwable t) {
             // TODO: What throws for enum not there.
