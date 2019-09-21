@@ -301,7 +301,7 @@ public class DefaultConfig extends ConfigFile {
         set(ConfPaths.COMBINED_BEDLEAVE_CHECK, "default", 785);
         set(ConfPaths.COMBINED_BEDLEAVE_ACTIONS, "cancel log:bedleave:0:5:if cmd:kickbedleave", 785);
 
-        set(ConfPaths.COMBINED_ENDERPEARL_CHECK, "default", 785);
+        set(ConfPaths.COMBINED_ENDERPEARL_CHECK, true, 785);
         set(ConfPaths.COMBINED_ENDERPEARL_PREVENTCLICKBLOCK, true, 785);
 
         set(ConfPaths.COMBINED_IMPROBABLE_CHECK , "default", 785);
@@ -375,10 +375,10 @@ public class DefaultConfig extends ConfigFile {
         set(ConfPaths.FIGHT_PITCHPATTERN_CHECK, "default", 1153);
         set(ConfPaths.FIGHT_PITCHPATTERN_ALWAYSACTIVE, false, 1153);
         set(ConfPaths.FIGHT_PITCHPATTERN_LIMIT, 10F, 1153);
-        set(ConfPaths.FIGHT_PITCHPATTERN_SAMPLE, 25, 1153);
+        set(ConfPaths.FIGHT_PITCHPATTERN_SAMPLE, 30, 1153);
         set(ConfPaths.FIGHT_PITCHPATTERN_DIFF, 0.001D, 1153);
         set(ConfPaths.FIGHT_PITCHPATTERN_DELTAGCD, 0.00001F, 1153);
-        set(ConfPaths.FIGHT_PITCHPATTERN_ACTIONS, "vl>2 log:pitchpattern:0:4:if", 1153);
+        set(ConfPaths.FIGHT_PITCHPATTERN_ACTIONS, "vl>5 log:pitchpattern:0:4:if", 1153);
 
         set(ConfPaths.FIGHT_REACH_CHECK, "default", 785);
         set(ConfPaths.FIGHT_REACH_SURVIVALDISTANCE, 4.4, 785);
