@@ -52,19 +52,24 @@ public class MultiClientProtocolBlockShapePatch extends AbstractBlockPropertiesP
     public void setupBlockProperties(WorldConfigProvider<?> worldConfigProvider) {
 
         final List<String> done = new LinkedList<String>();
-
-        //This freaks out with 1.8 using viaversion
         BlockFlags.addFlags(BridgeMaterial.LILY_PAD, 
                 BlockProperties.F_GROUND 
                 | BlockProperties.F_HEIGHT8_1 
                 | BlockProperties.F_GROUND_HEIGHT);
         done.add("water_lily");
-
+//Lilly pads dont work with 1.8 using viaversion
         BlockFlags.addFlags(BridgeMaterial.FARMLAND, 
                 BlockProperties.F_MIN_HEIGHT16_15 
                 | BlockProperties.F_HEIGHT100 
                 | BlockProperties.F_GROUND_HEIGHT);
         done.add("soil");
+
+        try {
+            BlockFlags.addFlags(Material.GRASS_PATH, 
+                    BlockProperties.F_MIN_HEIGHT16_15 
+                    | BlockProperties.F_HEIGHT100 
+                    | BlockProperties.F_GROUND_HEIGHT);
+            done.add("grass_path");
         }
         catch (Throwable t) {
             // TODO: What throws for enum not there.
