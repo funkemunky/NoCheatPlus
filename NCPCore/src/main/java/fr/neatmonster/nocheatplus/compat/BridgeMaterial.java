@@ -289,6 +289,8 @@ public class BridgeMaterial {
     public static final Material STONE_BRICKS = getFirstNotNull("stone_bricks", "smooth_brick");
     public static final Material STONE_BRICK_STAIRS = getFirstNotNull(
             "stone_brick_stairs", "smooth_stairs");
+    public static final Material WOODEN_PRESSURE_PLATE = getFirstNotNull(
+            "wooden_pressure_plate", "wood_plate", "acacia_pressure_plate", "birch_pressure_plate", "dark_oak_pressure_plate", "jungle_pressure_plate", "oak_pressure_plate", "spruce_pressure_plate");
     public static final Material STONE_PRESSURE_PLATE = getFirstNotNull(
             "stone_pressure_plate", "stone_plate");
     public static final Material STONE_SLAB = getFirstNotNull("stone_slab", "step");
