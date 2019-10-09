@@ -58,6 +58,9 @@ public class BlocksMC1_5 implements BlockPropertiesSetup {
 
         BlockInit.setAs(BridgeMaterial.WOODEN_PRESSURE_PLATE, 
                 BridgeMaterial.STONE_PRESSURE_PLATE);
+        
+        BlockInit.setAs(BridgeMaterial.GLASS_PANES, 
+                BridgeMaterial.IRON_BARS);
 
         // HACK 1.13
         Material comparator = BridgeMaterial.get("comparator");
