@@ -239,7 +239,7 @@ public class BridgeMaterial {
     public static final Material LIGHT_WEIGHTED_PRESSURE_PLATE = getFirstNotNull(
             "light_weighted_pressure_plate", "gold_plate");
 
-    public static final Material LILY_PAD = getFirstNotNull("lily_pad", "waterlily");
+    public static final Material LILY_PAD = getFirstNotNull("lily_pad", "water_lily");
 
     public static final Material MAGMA_BLOCK = getFirst("magma_block", "magma");
 
