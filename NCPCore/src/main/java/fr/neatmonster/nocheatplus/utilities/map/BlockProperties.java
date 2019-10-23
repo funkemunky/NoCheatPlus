@@ -1151,8 +1151,7 @@ public class BlockProperties {
         // Ignore for passable.
         for (final Material mat : new Material[]{
                 // More strictly needed.
-                BridgeMaterial.WOODEN_
-			_PLATE,
+                BridgeMaterial.WOODEN_PRESSURE_PLATE,
                 BridgeMaterial.STONE_PRESSURE_PLATE, 
                 BridgeMaterial.SIGN,
                 BridgeMaterial.get("DIODE_BLOCK_ON"), 
