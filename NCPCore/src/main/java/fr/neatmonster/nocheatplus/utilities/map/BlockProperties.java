@@ -1151,7 +1151,8 @@ public class BlockProperties {
         // Ignore for passable.
         for (final Material mat : new Material[]{
                 // More strictly needed.
-                BridgeMaterial.WOODEN_PRESSURE_PLATE,
+                BridgeMaterial.WOODEN_
+			_PLATE,
                 BridgeMaterial.STONE_PRESSURE_PLATE, 
                 BridgeMaterial.SIGN,
                 BridgeMaterial.get("DIODE_BLOCK_ON"), 
@@ -1338,9 +1339,7 @@ public class BlockProperties {
         setBlock(Material.NETHERRACK, new BlockProps(woodPickaxe, 0.4f, secToMs(2, 0.3, 0.15, 0.1, 0.1, 0.05)));
         setBlock(Material.LADDER, new BlockProps(noTool, 0.4f, secToMs(0.6), 2.5f));
         setBlock(Material.CACTUS, new BlockProps(noTool, 0.4f, secToMs(0.6)));
-        for (Material mat : MaterialUtil.WOODEN_PRESSURE_PLATES) {
-            setBlockProps(mat, new BlockProps(woodAxe, 0.5f, secToMs(0.75, 0.4, 0.2, 0.15, 0.1, 0.1)));
-        }
+        setBlock(BridgeMaterial.WOODEN_PRESSURE_PLATE, new BlockProps(woodAxe, 0.5f, secToMs(0.75, 0.4, 0.2, 0.15, 0.1, 0.1)));
         setBlock(BridgeMaterial.STONE_PRESSURE_PLATE, new BlockProps(woodPickaxe, 0.5f, secToMs(2.5, 0.4, 0.2, 0.15, 0.1, 0.07)));
         setBlock(Material.SAND, sandType);
         setBlock(Material.SOUL_SAND, sandType);
