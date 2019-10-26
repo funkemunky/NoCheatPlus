@@ -23,6 +23,7 @@ import fr.neatmonster.nocheatplus.config.WorldConfigProvider;
 import fr.neatmonster.nocheatplus.logging.StaticLog;
 import fr.neatmonster.nocheatplus.utilities.map.BlockFlags;
 import fr.neatmonster.nocheatplus.utilities.map.BlockProperties;
+import fr.neatmonster.nocheatplus.utilities.map.MaterialUtil;
 
 /**
  * This is an attempt to add Minecraft 1.5 blocks information without actual 1.5 dependency.
@@ -59,8 +60,10 @@ public class BlocksMC1_5 implements BlockPropertiesSetup {
         BlockInit.setAs(BridgeMaterial.WOODEN_PRESSURE_PLATE, 
                 BridgeMaterial.STONE_PRESSURE_PLATE);
         
-        BlockInit.setAs(BridgeMaterial.GLASS_PANES, 
-                BridgeMaterial.IRON_BARS);
+        // Wood Pressure Plate
+        for (Material mat : MaterialUtil.WOODEN_PRESSURE_PLATES) {
+            BlockFlags.addFlags(mat, BlockProperties.F_IGN_PASSABLE);
+        }
 
         // HACK 1.13
         Material comparator = BridgeMaterial.get("comparator");
