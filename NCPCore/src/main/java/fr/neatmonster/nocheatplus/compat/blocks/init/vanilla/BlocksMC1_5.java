@@ -56,9 +56,6 @@ public class BlocksMC1_5 implements BlockPropertiesSetup {
         //		BlockFlags.addFlags(148, BlockProperties.F_IGN_PASSABLE | BlockProperties.F_GROUND | BlockProperties.F_GROUND_HEIGHT);
         BlockInit.setAs(BridgeMaterial.HEAVY_WEIGHTED_PRESSURE_PLATE, 
                 BridgeMaterial.STONE_PRESSURE_PLATE);
-
-        BlockInit.setAs(BridgeMaterial.WOODEN_PRESSURE_PLATE, 
-                BridgeMaterial.STONE_PRESSURE_PLATE);
         
         // Wood Pressure Plate
         for (Material mat : MaterialUtil.WOODEN_PRESSURE_PLATES) {
