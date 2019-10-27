@@ -200,20 +200,6 @@ The NCPPlugin sub-project contains the relevant factories (MCAccessFactory, Enti
 		<profile>
 			<id>spigot1_14_r1</id>
 			<modules>
-				<module>NCPCompatCBDev</module>
-			</modules>
-			<dependencies>
-				<dependency>
-					<groupId>fr.neatmonster</groupId>
-					<artifactId>ncpcompatcbdev</artifactId>
-					<version>1.1-SNAPSHOT</version>
-				</dependency>
-			</dependencies>
-		</profile>
-
-		<profile>
-			<id>spigot1_14_r1</id>
-			<modules>
 				<module>NCPCompatSpigotCB1_14_R1</module>
 			</modules>
 			<dependencies>
@@ -234,6 +220,20 @@ The NCPPlugin sub-project contains the relevant factories (MCAccessFactory, Enti
 				<dependency>
 					<groupId>fr.neatmonster</groupId>
 					<artifactId>ncpcompatspigotcb1_13_r1</artifactId>
+					<version>1.1-SNAPSHOT</version>
+				</dependency>
+			</dependencies>
+		</profile>
+
+		<profile>
+			<id>spigot1_12_r1</id>
+			<modules>
+				<module>NCPCompatCBDev</module>
+			</modules>
+			<dependencies>
+				<dependency>
+					<groupId>fr.neatmonster</groupId>
+					<artifactId>ncpcompatcbdev</artifactId>
 					<version>1.1-SNAPSHOT</version>
 				</dependency>
 			</dependencies>
