@@ -743,19 +743,6 @@ public class DefaultConfig extends ConfigFile {
                 )) {
             set(ConfPaths.COMPATIBILITY_BLOCKS + ConfPaths.SUB_OVERRIDEFLAGS + "." + name, "default+ign_passable+ground_height", 785);
         }
-        for (final String DeadCoralType : Arrays.asList(
-                "DEAD_TUBE",
-                "DEAD_BRAIN",
-                "DEAD_BUBBLE",
-                "DEAD_FIRE",
-                "DEAD_HORN"
-                )) { 
-        	set(ConfPaths.COMPATIBILITY_BLOCKS + ConfPaths.SUB_OVERRIDEFLAGS + "." + DeadCoralType + "_CORAL", "default+ign_passable+ground_height", 1154);
-        	set(ConfPaths.COMPATIBILITY_BLOCKS + ConfPaths.SUB_OVERRIDEFLAGS + "." + DeadCoralType + "_CORAL_WALL_FAN", "default+ign_passable+ground_height", 1154);
-        }
-        set(ConfPaths.COMPATIBILITY_BLOCKS + ConfPaths.SUB_OVERRIDEFLAGS + "." + "DEAD_TUBE_CORAL_FAN", "default+ign_passable+ground_height", 1154);
-        set(ConfPaths.COMPATIBILITY_BLOCKS + ConfPaths.SUB_OVERRIDEFLAGS + "." + "DEAD_BRAIN_CORAL_FAN", "default+ign_passable+ground_height", 1154);
-        set(ConfPaths.COMPATIBILITY_BLOCKS + ConfPaths.SUB_OVERRIDEFLAGS + "." + "DEAD_BUBBLE_CORAL_FAN", "default+ign_passable+ground_height", 1154);
         set(ConfPaths.COMPATIBILITY_BLOCKS_CHANGETRACKER_ACTIVE, true, 1036); // With lastChangedBuildNumber.
         set(ConfPaths.COMPATIBILITY_BLOCKS_CHANGETRACKER_PISTONS, true, 785);
         set(ConfPaths.COMPATIBILITY_BLOCKS_CHANGETRACKER_MAXAGETICKS, 80, 785);
